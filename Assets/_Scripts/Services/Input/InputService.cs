@@ -8,8 +8,8 @@ namespace _Scripts.Services.Input
         private const string Vertical = "Vertical";
         private const string Horizontal = "Horizontal";
 
-        public Vector2 Axis =>
-            new Vector2(SimpleInput.GetAxis(Horizontal),
+        public Vector3 Axis =>
+            new Vector3(SimpleInput.GetAxis(Horizontal), 0,
                 SimpleInput.GetAxis(Vertical));
 
         public bool IsAttackButtonUp =>

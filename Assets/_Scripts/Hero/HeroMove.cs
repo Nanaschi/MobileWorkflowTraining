@@ -10,6 +10,7 @@ namespace _Scripts.Hero
         [SerializeField] private CharacterController characterController;
         private IInputService inputService;
         [SerializeField] private float _movementSpeed;
+        private Vector3 movementDirection;
 
         private void Awake()
         {
@@ -18,10 +19,13 @@ namespace _Scripts.Hero
 
         private void Update()
         {
-            characterController.Move
-            (_movementSpeed * 
-             new Vector3(inputService.Axis.x, 0 , inputService.Axis.y)
-             * Time.deltaTime);
+
+            
+            
+            characterController.Move(_movementSpeed * inputService.Axis * Time.deltaTime);
+
+
+            transform.forward = inputService.Axis;
         }
     }
 }
