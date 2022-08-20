@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace DefaultNamespace
+namespace _Scripts.Services.Input
 {
     class InputService : IInputService
     {
