@@ -7,9 +7,10 @@ namespace _Scripts.Infrastructure
         public static IInputService InputService;
 
 
-        public Game()
+        public Game(bool joyStickControl)
         {
-            InputService = new InputService();
+            if (joyStickControl) InputService = new JoystickInputService();
+            else InputService = new KeyboardInputService();
         }
     }
 }

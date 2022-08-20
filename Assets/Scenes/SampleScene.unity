@@ -771,6 +771,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a00758f10e9b184992502eee907911f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _joyStickControl: 1
 --- !u!1001 &5937135932008122935
 PrefabInstance:
   m_ObjectHideFlags: 0

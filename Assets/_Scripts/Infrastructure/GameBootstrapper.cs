@@ -6,9 +6,11 @@ namespace _Scripts.Infrastructure
     {
         private Game _game;
 
+        [SerializeField] private bool _joyStickControl;
+        
         private void Awake()
         {
-            _game = new Game();
+            _game = new Game(_joyStickControl);
             DontDestroyOnLoad(this);
         }
     }
